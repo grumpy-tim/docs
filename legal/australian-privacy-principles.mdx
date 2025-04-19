@@ -1,0 +1,435 @@
+---
+title: 'Australian Privacy Principles'
+description: 'How NoteMate complies with Australian Privacy Principles'
+---
+
+This document outlines how NoteMate (ABN 33 659 424 629) ("**NoteMate**", "**we**", "**us**", or "**our**") complies with the Australian Privacy Principles (APPs) under the Privacy Act 1988.
+
+## 1. Data Architecture Foundation
+
+### 1.1 Zero-Knowledge Architecture
+
+Our compliance is built on a zero-knowledge architecture where:
+
+1. The application cannot access or decrypt your sensitive clinical content
+    
+2. Clinical documentation is stored locally on your device
+    
+3. Content is temporarily transmitted for processing (transcription and generation)
+    
+4. We maintain only essential operational data and templates
+    
+
+### 1.2 Data Categories
+
+We handle three distinct categories of data:
+
+1. Authentication Data (via Clerk):
+    
+    - User authentication data
+        
+    - Security settings
+        
+    - Account management
+        
+    - Multi-factor authentication settings
+        
+2. Operational Data (via Redis in Australia):
+    
+    - Usage limits and quotas
+        
+    - Rate limiting data
+        
+    - Application metrics
+        
+    - Template storage and management
+        
+3. Processing Data (Temporary):
+    
+    - Audio recordings for transcription
+        
+    - Text for document generation
+        
+    - Transmitted securely and immediately discarded after processing
+        
+
+## 2. APP Compliance Details
+
+### 2.1 APP 1: Open and Transparent Management
+
+We demonstrate transparency through:
+
+4. Comprehensive documentation:
+    
+    - Clear privacy policies
+        
+    - Detailed data handling information
+        
+    - Regular policy updates
+        
+    - Accessible privacy information
+        
+5. Management practices:
+    
+    - Documented procedures
+        
+    - Regular staff training
+        
+    - Clear accountability
+        
+    - Incident response planning
+        
+
+### 2.2 APP 2: Anonymity and Pseudonymity
+
+We support privacy by:
+
+6. Minimising data collection:
+    
+    - Essential operational data only
+        
+    - No unnecessary personal information
+        
+    - No stored clinical content
+        
+7. User control:
+    
+    - Local data storage
+        
+    - User-managed profiles
+        
+    - Optional feature usage
+        
+
+### 2.3 APP 3: Collection of Solicited Information
+
+We maintain minimal collection through:
+
+8. Authentication data:
+    
+    - Managed by Clerk
+        
+    - Essential credentials only
+        
+    - Security settings
+        
+    - Account management
+        
+9. Operational data:
+    
+    - Usage metrics
+        
+    - System performance
+        
+    - Security monitoring
+        
+    - Template storage
+        
+    - No clinical content
+        
+10. Billing data:
+    
+    - Managed by Stripe
+        
+    - Payment information
+        
+    - Subscription details
+        
+    - Transaction history
+        
+
+### 2.4 APP 4: Dealing with Unsolicited Information
+
+Our architecture prevents unsolicited information by:
+
+11. Technical measures:
+    
+    - Zero-knowledge design
+        
+    - Immediate processing deletion
+        
+    - No content storage
+        
+    - Local-only clinical data
+        
+12. Operational procedures:
+    
+    - Clear data boundaries
+        
+    - Processing limitations
+        
+    - Staff training
+        
+    - Regular audits
+        
+
+### 2.5 APP 5: Notification of Collection
+
+We provide clear notification about:
+
+13. Data handling:
+    
+    - Types of information processed
+        
+    - Processing methods
+        
+    - Third-party services
+        
+    - Processing duration
+        
+14. Purpose information:
+    
+    - Intended use
+        
+    - Processing necessity
+        
+    - Service functionality
+        
+    - User benefits
+        
+
+### 2.6 APP 6: Use or Disclosure
+
+Our data handling ensures:
+
+15. Limited use:
+    
+    - Specified purposes only
+        
+    - No secondary use
+        
+    - No marketing use
+        
+    - No data sharing
+        
+16. Controlled disclosure:
+    
+    - Processing partners only
+        
+    - Strict agreements
+        
+    - Limited duration
+        
+    - Immediate deletion
+        
+
+### 2.7 APP 7: Direct Marketing
+
+We maintain privacy by:
+
+17. No marketing use:
+    
+    - No personal information use
+        
+    - No behavior tracking
+        
+    - No profile building
+        
+18. Communication limits:
+    
+    - Service updates only
+        
+    - Security notifications
+        
+    - Essential information
+        
+    - User-controlled preferences
+        
+
+### 2.8 APP 8: Cross-border Disclosure
+
+We manage international processing through:
+
+19. Partner Services:
+    
+    - Authentication (Clerk - US based)
+        
+    - Audio transcription (OpenAI Whisper - US based)
+        
+    - Document generation (Anthropic - US based)
+        
+    - Payment processing (Stripe - US based)
+        
+20. Technical Controls:
+    
+    - Encrypted transmission
+        
+    - Immediate processing deletion
+        
+    - No persistent storage of clinical data
+        
+    - Template storage in Australian data centers
+        
+
+### 2.9 APP 9: Government Identifiers
+
+We ensure compliance by:
+
+21. Data limitations:
+    
+    - No government identifiers
+        
+    - No Medicare numbers
+        
+    - No tax identifiers
+        
+    - No health identifiers
+        
+22. Authentication approach:
+    
+    - Email-based identification
+        
+    - Secure credentials
+        
+    - Professional verification
+        
+    - No government ID requirements
+        
+
+### 2.10 APP 10: Quality of Personal Information
+
+We maintain data quality through:
+
+23. Real-time processing:
+    
+    - No historical storage
+        
+    - Immediate updates
+        
+    - Regular verification
+        
+    - User control
+        
+24. Quality controls:
+    
+    - Accuracy checks
+        
+    - Validation procedures
+        
+    - Update mechanisms
+        
+    - Error correction
+        
+
+### 2.11 APP 11: Security of Personal Information
+
+Our security measures include:
+
+25. Technical controls:
+    
+    - Encryption for all data in-transit
+        
+    - Zero-knowledge architecture
+        
+    - Multi-factor authentication
+        
+    - Access controls
+        
+26. Operational security:
+    
+    - Regular assessments
+        
+    - Staff training
+        
+    - Incident response
+        
+    - Security monitoring
+        
+
+### 2.12 APP 12: Access to Personal Information
+
+We provide access through:
+
+27. Account Management:
+    
+    - Profile settings via Clerk
+        
+    - Subscription management
+        
+    - Usage statistics
+        
+    - Template management
+        
+28. Access Methods:
+    
+    - Self-service account dashboard
+        
+    - Support assistance when needed
+        
+
+### 2.13 APP 13: Correction of Personal Information
+
+We enable corrections through:
+
+29. Account Updates:
+    
+    - Email address changes
+        
+    - Profile information updates
+        
+    - Subscription modifications
+        
+30. Data Accuracy:
+    
+    - Immediate profile updates
+        
+    - Template management
+        
+    - Usage tracking verification
+        
+
+## 3. Psychology Practice Requirements
+
+### 3.1 Clinical Use
+
+When using NoteMate in psychology practice:
+
+31. Consent requirements:
+    
+    - Explicit client/patient consent
+        
+    - Documented approval
+        
+    - Clear information
+        
+    - Withdrawal options
+        
+32. Professional obligations:
+    
+    - Psychology clinical standards
+        
+    - Privacy compliance
+        
+    - Record keeping
+        
+    - Security measures
+        
+
+## 4. Changes
+
+### 4.1 Updates
+
+We may update this page by:
+
+33. Posting changes on our website
+    
+34. Notifying you via email
+    
+35. Providing in-app notifications
+    
+36. Requiring acknowledgment if necessary
+    
+
+### 4.2 Effect
+
+Changes will be effective upon posting, with continued use constituting acceptance.
+
+## Contact
+
+For privacy-related inquiries, please email contact@notemate.io.
+
+Privacy complaints may also be directed to:  
+  
+**Office of the Victorian Information Commissioner**  
+PO Box 24274  
+Melbourne VIC 3001

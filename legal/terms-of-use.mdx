@@ -3,45 +3,465 @@ title: 'Terms of Use'
 description: 'Terms and conditions for using NoteMate services'
 ---
 
-## Introduction
+This Privacy Policy describes how NoteMate (ABN 33 659 424 629) ("**NoteMate**", "**we**", "**us**", or "**our**") collects, uses, and handles your information when you use our clinical documentation platform ("**Service**").
 
-Welcome to NoteMate. By accessing or using our services, you agree to be bound by these Terms of Use. Please read them carefully.
+## 1. Zero-Knowledge Architecture
 
-## Acceptance of Terms
+### 1.1 Core Principles
 
-By accessing or using NoteMate, you agree to be bound by these Terms of Use and all applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using or accessing this site.
+Our software architecture ensures that:
 
-## Use License
+1. The application cannot access or decrypt your sensitive clinical content
+    
+2. Clinical documentation is stored locally on your device
+    
+3. We cannot access, view, or retrieve your clinical content
+    
+4. You maintain complete control over your sensitive information
+    
+5. Content is temporarily transmitted for processing (transcription and generation)
+    
 
-Permission is granted to temporarily download one copy of the materials on NoteMate for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
-- Modify or copy the materials
-- Use the materials for any commercial purpose
-- Attempt to decompile or reverse engineer any software contained on NoteMate
-- Remove any copyright or other proprietary notations from the materials
-- Transfer the materials to another person or "mirror" the materials on any other server
+### 1.2 Data Categories
 
-## Disclaimer
+We handle different types of data with specific protections:
 
-The materials on NoteMate are provided on an 'as is' basis. NoteMate makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+6. Content Data (Local Storage):
+    
+    - Clinical documentation on your device
+        
+    - Generated transcripts and documents
+        
+    - Audio recordings before processing
+        
+    - Generated clinical content
+        
+7. Operational Data (Minimal Storage):
+    
+    - Authentication data managed by Clerk
+        
+    - Usage metrics and quotas
+        
+    - Payment information via Stripe
+        
+    - Application monitoring data
+        
+    - Template storage and management
+        
+8. Processing Data (Temporary):
+    
+    - Audio recordings during transcription
+        
+    - Text during document generation
+        
+    - Transmitted securely and immediately discarded
+        
 
-## Limitations
+## 2. Data Processing and Partners
 
-In no event shall NoteMate or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on NoteMate, even if NoteMate or a NoteMate authorized representative has been notified orally or in writing of the possibility of such damage.
+### 2.1 Third-Party Services
 
-## Revisions and Errata
+We use the following third-party services with strict data processing agreements:
 
-The materials appearing on NoteMate could include technical, typographical, or photographic errors. NoteMate does not warrant that any of the materials on its website are accurate, complete or current. NoteMate may make changes to the materials contained on its website at any time without notice.
+9. Clerk (United States)
+    
+    - Purpose: Authentication and user management
+        
+    - Data Handling:
+        
+        - User authentication
+            
+        - Session management
+            
+        - Security monitoring
+            
+        - User profiles
+            
+    - Security Measures:
+        
+        - SOC 2 Type 2 certified
+            
+        - Enterprise-grade encryption
+            
+        - MFA support
+            
+        - Fraud prevention
+            
+10. OpenAI (United States)
+    
+    - Purpose: Audio transcription using Whisper
+        
+    - Data Handling:
+        
+        - Temporary audio transcription
+            
+        - No data retention
+            
+        - No training or model fine-tuning
+            
+    - Security Measures:
+        
+        - SOC 2 Type 2 certified
+            
+        - Data encrypted in transit
+            
+        - Strict access controls
+            
+        - Regular security audits
 
-## Links
+10a. Anthropic (United States)
+    
+    - Purpose: Document generation
+        
+    - Data Handling:
+        
+        - Real-time text processing
+            
+        - No data retention
+            
+        - No training or model fine-tuning
+            
+    - Security Measures:
+        
+        - SOC 2 Type 2 certified
+            
+        - Data encrypted in transit
+            
+        - Strict access controls
+            
+        - Regular security audits
+            
+11. Redis (United States)
+    
+    - Purpose: Database operations and usage tracking
+        
+    - Data Handling:
+        
+        - Rate limiting data
+            
+        - Usage quotas
+            
+        - Application metrics
+            
+        - No user content storage
+            
+    - Security Measures:
+        
+        - Australian data center
+            
+        - SOC 2 Type 2 certified
+            
+        - Network isolation
+            
+        - Encryption at rest
+            
+12. Stripe (United States)
+    
+    - Purpose: Payment processing
+        
+    - Data Handling:
+        
+        - Payment information only
+            
+        - PCI DSS Level 1 certified
+            
+        - No access to clinical data
+            
+    - Security Measures:
+        
+        - Encryption for all data in-transit
+            
+        - Fraud detection
+            
+        - Regular assessments
+            
+        - Compliance monitoring
+            
 
-NoteMate has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by NoteMate of the site. Use of any such linked website is at the user's own risk.
+13. PostHog (European Union)
+    
+    - Purpose: Product analytics and user behaviour insights
+        
+    - Data Handling:
+        
+        - Anonymous usage patterns
+            
+        - Feature adoption metrics
+            
+        - Performance monitoring
+            
+        - No personal data collection
+            
+    - Security Measures:
+        
+        - EU data hosting
+            
+        - Data minimisation practices
+            
+        - Regular security audits
+            
+        - Strict access controls
+            
 
-## Modifications
+14. Google Ads (United States)
+    
+    - Purpose: Advertising conversion tracking
+        
+    - Data Handling:
+        
+        - Conversion metrics
+            
+        - Ad performance data
+            
+        - Cookie-based tracking
+            
+        - Anonymised user interactions
+            
+    - Security Measures:
+        
+        - Data encryption in transit
+            
+        - Limited data retention
+            
+        - Regular compliance audits
+            
+        - Access restrictions
+            
 
-NoteMate may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.
+15. Plausible Analytics (European Union)
+    
+    - Purpose: Privacy-focused website analytics
+        
+    - Data Handling:
+        
+        - Anonymous page views
+            
+        - Aggregate visitor statistics
+            
+        - No personal data collection
+            
+        - No cookie tracking
+            
+    - Security Measures:
+        
+        - EU-based data processing
+            
+        - GDPR compliant
+            
+        - No cross-site tracking
+            
+        - Data minimisation by design
+            
 
-## Governing Law
+### 2.2 Data Processing Principles
 
-These terms and conditions are governed by and construed in accordance with the laws and you irrevocably submit to the exclusive jurisdiction of the courts in that location.
+All data processing follows these principles:
 
-*Last updated: April 19, 2025*
+16. Temporary and immediate processing only
+    
+17. Subject to strict data processing agreements
+    
+18. Compliant with Australian privacy laws
+    
+19. Limited to essential operations
+    
+20. Regular security and compliance audits
+    
+
+## 3. Security Measures
+
+### 3.1 Technical Security
+
+We protect your data through:
+
+21. Encryption for all data in transit
+    
+22. Zero-knowledge architecture preventing data access
+    
+23. Secure authentication using Clerk
+    
+24. Multi-factor authentication options
+    
+    
+
+### 3.2 Operational Security
+
+Our operational security includes:
+
+26. Regular security audits
+    
+27. Access control and monitoring
+    
+28. Incident response procedures
+    
+29. Security patch management
+    
+
+## 4. Data Protection Obligations
+
+### 4.1 Our Commitments
+
+We commit to:
+
+30. Protecting your privacy and data security
+    
+31. Processing data only as necessary
+    
+32. Maintaining appropriate security measures
+    
+33. Promptly responding to security incidents
+    
+34. Regular compliance reviews
+    
+
+### 4.2 Your Responsibilities
+
+You are responsible for:
+
+35. Maintaining local device security
+    
+36. Protecting access credentials
+    
+37. Obtaining client/patient consent
+    
+38. Following professional privacy obligations
+    
+39. Reporting security concerns promptly
+    
+
+## 5. Psychology Practice Requirements
+
+### 5.1 Client Consent
+
+When using NoteMate in your psychology practice, you must:
+
+40. Obtain explicit client/patient consent before recording
+    
+41. Document consent in clinical records
+    
+42. Inform clients/patients about:
+    
+    - The purpose of recording
+        
+    - Temporary processing details
+        
+    - Local device storage
+        
+    - Security measures in place
+        
+43. Follow Australian psychology privacy regulations
+    
+
+### 5.2 Professional Obligations
+
+As a psychologist, you must maintain:
+
+44. Appropriate clinical records
+    
+45. Client/patient privacy protocols
+    
+46. Psychology professional standards compliance
+    
+47. Organisational policy compliance
+    
+
+## 6. Your Privacy Rights
+
+### 6.1 Legal Rights
+
+Under Australian privacy law, you have the right to:
+
+48. Access your personal information
+    
+49. Correct your personal information
+    
+50. Request account deletion
+    
+51. Withdraw processing consent
+    
+52. Lodge privacy complaints
+    
+53. Receive data breach notifications
+    
+
+### 6.2 Exercise of Rights
+
+To exercise these rights:
+
+54. Email us at contact@notemate.io
+    
+55. Provide necessary identification
+    
+56. Specify your request clearly
+    
+57. Allow up to seven (7) days for response
+    
+
+## 7. Data Incidents
+
+### 7.1 Our Response
+
+In case of a data incident, we will:
+
+58. Investigate immediately
+    
+59. Notify affected users
+    
+60. Implement containment measures
+    
+61. Conduct root cause analysis
+    
+62. Take preventive actions
+    
+
+### 7.2 Notification Process
+
+We will notify you of incidents:
+
+63. Within required timeframes
+    
+64. With incident details
+    
+65. With recommended actions
+    
+66. Through secure channels
+    
+
+## 8. Jurisdiction and Governing Law
+
+### 8.1 Governing Law
+
+This Privacy Policy is governed by the laws of Victoria, Australia.
+
+### 8.2 Jurisdiction
+
+Any privacy disputes will be subject to the exclusive jurisdiction of the courts of Victoria, Australia.
+
+## 9. Changes to Policy
+
+### 9.1 Updates
+
+We may update this Privacy Policy by:
+
+67. Posting changes on our website
+    
+68. Notifying you via email
+    
+69. Providing in-app notifications
+    
+70. Requiring acknowledgment if necessary
+    
+
+### 9.2 Effect
+
+Changes will be effective upon posting, with continued use constituting acceptance.
+
+## Contact
+
+For privacy-related inquiries, please email contact@notemate.io.
+
+Privacy complaints may also be directed to:  
+  
+**Office of the Victorian Information Commissioner**  
+PO Box 24274  
+Melbourne VIC 3001
