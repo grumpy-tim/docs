@@ -3,130 +3,156 @@ title: 'Terms of Use'
 description: 'Last updated: 22 April 2025'
 ---
 
-# Privacy Policy
+These Terms of Use ("Terms") govern your access to and use of NoteMate ("Service"), a clinical documentation platform developed and operated by NoteMate ("NoteMate", "we", "us", or "our"). By accessing or using the Service, you agree to be bound by these Terms. If you disagree with any part of these Terms, you may not access or use the Service.
 
-This Privacy Policy describes how NoteMate ("**NoteMate**", "**we**", "**us**", or "**our**") collects, uses, and handles your information when you use our clinical documentation platform ("**Service**").
+## 1. Service Description
 
-## 1. Zero-Knowledge Architecture
+NoteMate is a platform designed for Australian mental health professionals. The Service enables practitioners to record and transcribe clinical consultations, generate clinical documentation from voice recordings and text inputs, create and manage clinical documentation templates, and process clinical information with temporary transmission for transcription and generation.
 
-### 1.1 Core Principles
+## 2. Account Registration and Security
 
-Our software architecture ensures that your privacy and data security are paramount. The application is designed so that it cannot access or decrypt your sensitive clinical content. All clinical documentation is stored locally on your device, which means we cannot access, view, or retrieve your clinical content under any circumstances. You maintain complete control over your sensitive information. Content is temporarily transmitted for processing purposes such as transcription and generation, after which it is immediately and permanently deleted from our systems.
+### 2.1 Registration Requirements
 
-### 1.2 Data Categories
+By creating an account, you warrant that:
 
-We handle different types of data with specific protections tailored to each category:
+You are a permanent resident or citizen of Australia and have the legal capacity to enter into these Terms. You are a registered mental health professional in Australia. You confirm that all information you provide during registration is accurate and complete, and you will maintain the accuracy of such information.
 
-**Content Data (Local Storage):** This includes all clinical documentation stored on your device, generated transcripts and documents, audio recordings before processing, and any generated clinical content. This data remains on your local device and is not accessible to us.
+### 2.2 Security Responsibilities
 
-**Operational Data (Minimal Storage):** This encompasses authentication data managed by Clerk, usage metrics and quotas, payment information processed via Stripe, application monitoring data, and template storage and management. We collect what is necessary to provide and maintain the service.
+You are responsible for:
 
-**Processing Data (Temporary):** This includes audio recordings during transcription, text during document generation, and other content that is transmitted securely for processing. This data is immediately discarded after processing is complete and is never stored permanently.
+You are responsible for maintaining the confidentiality of your account credentials and for all activities that occur under your account. You must implement appropriate security measures, including multi-factor authentication where available, and immediately notify us of any unauthorised access or security breaches.
 
-## 2. Data Processing and Partners
+## 3. Professional Obligations
 
-### 2.1 Third-Party Services
+### 3.1 Practitioner Requirements
 
-We use the following third-party services with strict data processing agreements to ensure your data remains protected:
+As a mental health professional using the Service, you are required to maintain compliance with all relevant professional regulations and standards, follow your organisation's policies regarding clinical documentation, ensure appropriate security measures on your local device, and maintain your own backup procedures for local data.
 
-**Clerk (United States):** Clerk provides authentication and user management services. They handle user authentication, session management, security monitoring, and user profiles. Clerk maintains SOC 2 Type 2 certification, employs enterprise-grade encryption, supports multi-factor authentication, and implements fraud prevention measures to ensure the security of your account information.
+### 3.2 Professional Responsibility
 
-**OpenAI (United States):** OpenAI provides audio transcription services using their Whisper technology. They handle temporary audio transcription with no data retention and no training or model fine-tuning using your data. OpenAI is SOC 2 Type 2 certified, encrypts all data in transit, implements strict access controls, and conducts regular security audits to maintain the highest security standards.
+You acknowledge that you are solely responsible for:
 
-**Deepgram (United States):** Deepgram provides speech-to-text transcription services as an alternative to OpenAI. They handle temporary audio transcription with no data retention and no training or model fine-tuning using your data. Deepgram is SOC 2 Type 2 certified, encrypts all data in transit, implements strict access controls, and conducts regular security audits to ensure your audio data is processed securely.
+You acknowledge that you are solely responsible for the accuracy and completeness of all clinical documentation, obtaining and maintaining appropriate client/patient consent, compliance with relevant professional standards, and any clinical decisions made using the Service.
 
-**Anthropic (United States):** Anthropic provides document generation services through real-time text processing with no data retention and no training or model fine-tuning using your data. They maintain SOC 2 Type 2 certification, encrypt all data in transit, implement strict access controls, and conduct regular security audits to protect your information during processing.
+## 4. AI Functionality
 
-**Redis (United States):** Redis supports our database operations and usage tracking needs. They handle rate limiting data, usage quotas, and application metrics, but never store user content. Redis operates from an Australian data centre, maintains SOC 2 Type 2 certification, implements network isolation, and encrypts data at rest to ensure operational data remains secure.
+### 4.1 Service Limitations
 
-**Stripe (United States):** Stripe processes all payment information with PCI DSS Level 1 certification and has no access to clinical data. They encrypt all data in transit, employ fraud detection mechanisms, conduct regular assessments, and monitor compliance to ensure payment information remains secure.
+NoteMate's AI functionality, powered by Anthropic, OpenAI, and Deepgram, is designed to assist with administrative tasks and documentation. You acknowledge and agree that the AI is not a medical device and all AI outputs require professional verification. The Service does not provide advice or decisions, and you maintain full professional responsibility for all clinical decisions.
 
-**PostHog (European Union):** PostHog provides product analytics and user behaviour insights through anonymous usage patterns, feature adoption metrics, and performance monitoring without collecting personal data. They host data in the EU, practice data minimisation, conduct regular security audits, and implement strict access controls to protect usage information.
+### 4.2 Prohibited Uses
 
-**Google Ads (United States):** Google Ads tracks advertising conversions, ad performance data, and anonymised user interactions using cookie-based tracking. They encrypt data in transit, limit data retention, conduct regular compliance audits, and restrict access to ensure advertising data remains protected.
+You must not use the Service's AI functionality for:
 
-**Plausible Analytics (European Union):** Plausible provides privacy-focused website analytics through anonymous page views and aggregate visitor statistics without collecting personal data or using cookie tracking. They process data in the EU, maintain GDPR compliance, avoid cross-site tracking, and implement data minimisation by design to ensure privacy-friendly analytics.
+You must not use the Service's AI functionality for automated clinical decisions, direct client/patient diagnosis, treatment recommendations, emergency advice, or critical care applications.
 
-### 2.2 Data Processing Principles
+## 5. Privacy and Data Protection
 
-All data processing follows strict principles designed to protect your privacy. We process data temporarily and immediately, subject to strict data processing agreements with our partners. All processing complies with Australian privacy laws, and is limited to essential operations necessary for service provision.
+### 5.1 Zero-Knowledge Architecture
 
-## 3. Security Measures
+NoteMate employs a zero-knowledge architecture where:
 
-### 3.1 Technical Security
+The application cannot access or decrypt your sensitive clinical content, and clinical documentation is stored locally on your device. Content is temporarily transmitted for processing (transcription and generation), after which we maintain only essential operational data and templates. We use analytics and advertising services (including PostHog, Google Ads, and Plausible Analytics) to improve our Service and track advertising performance.
 
-We protect your data through comprehensive technical security measures. All data in transit is encrypted using industry-standard protocols. Our zero-knowledge architecture prevents data access by design. We implement secure authentication using Clerk's robust systems and offer multi-factor authentication options to provide additional account security.
+### 5.2 Privacy Obligations
 
-### 3.2 Operational Security
+You agree to:
 
-Our operational security includes security audits to identify and address potential vulnerabilities. We implement strict access control and monitoring to ensure only authorised personnel can access systems. We maintain incident response procedures to address security events promptly.
+You agree to comply with our Privacy Policy, obtain necessary client/patient consents for data processing, maintain appropriate security measures, and report any privacy or security incidents promptly.
 
-## 4. Data Protection Obligations
+## 6. Intellectual Property
 
-### 4.1 Our Commitments
+### 6.1 NoteMate's Rights
 
-We are committed to protecting your privacy and data security. We process data as necessary to provide the services you request. We maintain appropriate security measures that meet or exceed industry standards. We respond promptly to any security incidents and conduct compliance reviews to ensure ongoing adherence to privacy regulations and best practices.
+We retain all rights, title, and interest in:
 
-### 4.2 Your Responsibilities
+We retain all rights, title, and interest in the Service software and technology, our branding and trademarks, the Service's design and interface, and all related documentation and materials.
 
-As a user of our service, you have certain responsibilities regarding data security. You should maintain local device security through appropriate measures such as device passwords, encryption, and up-to-date software. You must protect your access credentials and not share them with unauthorised individuals. If you use the service in a professional capacity, you must obtain client/patient consent as required by your professional obligations. You should follow all professional privacy obligations applicable to your practice, and report any security concerns promptly so we can address them.
+### 6.2 Your Rights
 
-## 5. Mental Health Practice Requirements
+You retain all rights to:
 
-### 5.1 Client Consent
+You retain all rights to your clinical documentation, custom templates you create, patient data, and recorded consultations.
 
-When using NoteMate in your mental health practice, you must obtain explicit client/patient consent before recording any sessions. This consent should be documented in your clinical records as evidence of compliance. You should inform clients/patients about the purpose of recording, temporary processing details, local device storage practices, and security measures in place to protect their information. All usage must follow Australian privacy regulations and professional standards applicable to your discipline.
+## 7. Service Availability and Updates
 
-### 5.2 Professional Obligations
+### 7.1 Service Provision
 
-As a mental health professional using our service, you must maintain appropriate clinical records in accordance with your profession's standards. You must implement and follow client/patient privacy protocols that meet regulatory requirements for your discipline. Your use of NoteMate must comply with your profession's standards and any organisational policies applicable to your practice setting. NoteMate is designed for use by all qualified mental health professionals, including but not limited to psychologists, psychiatrists, counsellors, social workers, and other qualified practitioners.
+We strive to provide reliable access to the Service, but do not guarantee uninterrupted access. We reserve the right to:
 
-## 6. Your Privacy Rights
+We reserve the right to release updates and modifications, modify features with notice, temporarily suspend access for technical reasons, and perform necessary maintenance.
 
-### 6.1 Legal Rights
+### 7.2 Technical Requirements
 
-Under Australian privacy law, you have several important rights regarding your personal information. You have the right to access your personal information that we hold. You can request corrections to your personal information if it is inaccurate or incomplete. You may request account deletion if you no longer wish to use our services. You can withdraw processing consent at any time. You have the right to lodge privacy complaints with relevant authorities if you believe your privacy has been violated. You will receive data breach notifications in the unlikely event of a security incident affecting your data.
+You acknowledge that:
 
-### 6.2 Exercise of Rights
+You acknowledge that the Service requires a stable internet connection, local device performance may affect functionality, updates may be required for continued use, and technical support is provided according to our current policies.
 
-To exercise these rights, you can email us at contact@notemate.io with your request. Please provide necessary identification to verify your identity and specify your request clearly so we can address it promptly. We will respond to all legitimate requests within seven (7) days to ensure your rights are respected.
+## 8. Billing and Payments
 
-## 7. Data Incidents
+### 8.1 Service Fees
 
-### 7.1 Our Response
+Service fees are:
 
-In the event of a data incident, we will investigate immediately to understand the scope and impact. We will notify all affected users with relevant details about the incident. We will implement containment measures to limit any potential damage. We will conduct a thorough root cause analysis to understand how the incident occurred, and take preventive actions to reduce the risk of similar incidents in the future.
+Service fees are charged according to our current pricing schedule, billed in advance for the subscription period, non-refundable except as required by law, and subject to change with notice.
 
-### 7.2 Notification Process
+### 8.2 Subscriptions
 
-We will notify you of incidents within required timeframes established by applicable regulations. Our notifications will include incident details to help you understand what happened. We will provide recommended actions you can take to protect yourself if necessary. All notifications will be sent through secure channels to prevent further security issues.
+Subscriptions:
 
-## 8. Jurisdiction and Governing Law
+Subscriptions automatically renew unless cancelled and can be cancelled before the renewal date. They continue until the end of the paid period and do not qualify for partial refunds upon cancellation.
 
-### 8.1 Governing Law
+## 9. Liability and Indemnification
 
-This Privacy Policy is governed by the laws of Victoria, Australia, which determine how the terms are interpreted and enforced.
+### 9.1 Limitation of Liability
 
-### 8.2 Jurisdiction
+To the maximum extent permitted by law:
 
-Any privacy disputes arising from the use of our service will be subject to the exclusive jurisdiction of the courts of Victoria, Australia, which will have the authority to resolve such disputes.
+To the maximum extent permitted by law, the Service is provided "as is" without warranty. We are not liable for any clinical decisions. Our liability is limited to the fees paid in the previous 12 months, and we exclude all implied warranties and guarantees.
 
-## 9. Changes to Policy
+### 9.2 Indemnification
 
-### 9.1 Updates
+You agree to indemnify us against any claims arising from:
 
-We may update this Privacy Policy from time to time to reflect changes in our practices or regulatory requirements. We will post changes on our website to ensure transparency. We may notify you via email about significant changes that affect your rights or our obligations. We may provide in-app notifications about policy updates. For substantial changes, we may require acknowledgment to ensure you are aware of the new terms.
+You agree to indemnify us against any claims arising from your use of the Service, patient complaints, professional misconduct, or violations of these Terms.
 
-### 9.2 Effect
+## 10. Termination
 
-All changes to this policy will be effective upon posting to our website. Your continued use of our services after policy updates constitutes acceptance of the new terms, so we encourage you to review the policy periodically.
+### 10.1 User Termination
+
+You may terminate these Terms by:
+
+You may terminate these Terms by cancelling your subscription, ensuring you have saved your local data, requesting account deletion through the account settings, and ceasing use of the application.
+
+### 10.2 Service Termination
+
+We may terminate or suspend your access if:
+
+We may terminate or suspend your access if you violate these Terms, fail to pay applicable fees, engage in prohibited activities, as required by law, or if you are no longer an Australian resident.
+
+## 11. Jurisdiction and Governing Law
+
+### 11.1 Governing Law
+
+These Terms are governed by the laws of Victoria, Australia.
+
+### 11.2 Jurisdiction
+
+You submit to the exclusive jurisdiction of the courts of Victoria, Australia.
+
+## 12. Changes to Terms
+
+### 12.1 Updates
+
+We may update these Terms by:
+
+We may update these Terms by posting changes on our website, notifying you via email, providing in-app notifications, and requiring acknowledgment if necessary.
+
+### 12.2 Effect
+
+Changes will be effective upon posting, with continued use constituting acceptance.
 
 ## Contact
 
-For privacy-related inquiries, please email contact@notemate.io.
-
-Privacy complaints may also be directed to:  
-  
-**Office of the Victorian Information Commissioner**  
-PO Box 24274  
-Melbourne VIC 3001
+For questions about these terms, please email contact@notemate.io.
