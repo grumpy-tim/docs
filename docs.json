@@ -11,30 +11,6 @@
   "navigation": {
     "groups": [
       {
-        "group": "Get Started",
-        "pages": [
-          "introduction",
-          "quickstart"
-        ]
-      },
-      {
-        "group": "Essentials",
-        "pages": [
-          "essentials/markdown",
-          "essentials/code",
-          "essentials/images",
-          "essentials/settings",
-          "essentials/navigation",
-          "essentials/reusable-snippets"
-        ]
-      },
-      {
-        "group": "Changelog",
-        "pages": [
-          "changelog"
-        ]
-      },
-      {
         "group": "Legal",
         "pages": [
           "legal/terms-of-use",

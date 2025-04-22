@@ -1,464 +1,129 @@
 ---
 title: 'Terms of Use'
-description: 'Terms and conditions for using NoteMate services'
+description: ‘Last updated: 22 April 2025’
 ---
 
-This Privacy Policy describes how NoteMate (ABN 33 659 424 629) ("**NoteMate**", "**we**", "**us**", or "**our**") collects, uses, and handles your information when you use our clinical documentation platform ("**Service**").
+# Privacy Policy
+
+This Privacy Policy describes how NoteMate ("**NoteMate**", "**we**", "**us**", or "**our**") collects, uses, and handles your information when you use our clinical documentation platform ("**Service**").
 
 ## 1. Zero-Knowledge Architecture
 
 ### 1.1 Core Principles
 
-Our software architecture ensures that:
-
-1. The application cannot access or decrypt your sensitive clinical content
-    
-2. Clinical documentation is stored locally on your device
-    
-3. We cannot access, view, or retrieve your clinical content
-    
-4. You maintain complete control over your sensitive information
-    
-5. Content is temporarily transmitted for processing (transcription and generation)
-    
+Our software architecture ensures that your privacy and data security are paramount. The application is designed so that it cannot access or decrypt your sensitive clinical content. All clinical documentation is stored locally on your device, which means we cannot access, view, or retrieve your clinical content under any circumstances. You maintain complete control over your sensitive information. Content is temporarily transmitted for processing purposes such as transcription and generation, after which it is immediately and permanently deleted from our systems.
 
 ### 1.2 Data Categories
 
-We handle different types of data with specific protections:
+We handle different types of data with specific protections tailored to each category:
 
-6. Content Data (Local Storage):
-    
-    - Clinical documentation on your device
-        
-    - Generated transcripts and documents
-        
-    - Audio recordings before processing
-        
-    - Generated clinical content
-        
-7. Operational Data (Minimal Storage):
-    
-    - Authentication data managed by Clerk
-        
-    - Usage metrics and quotas
-        
-    - Payment information via Stripe
-        
-    - Application monitoring data
-        
-    - Template storage and management
-        
-8. Processing Data (Temporary):
-    
-    - Audio recordings during transcription
-        
-    - Text during document generation
-        
-    - Transmitted securely and immediately discarded
-        
+**Content Data (Local Storage):** This includes all clinical documentation stored on your device, generated transcripts and documents, audio recordings before processing, and any generated clinical content. This data remains on your local device and is not accessible to us.
+
+**Operational Data (Minimal Storage):** This encompasses authentication data managed by Clerk, usage metrics and quotas, payment information processed via Stripe, application monitoring data, and template storage and management. We collect what is necessary to provide and maintain the service.
+
+**Processing Data (Temporary):** This includes audio recordings during transcription, text during document generation, and other content that is transmitted securely for processing. This data is immediately discarded after processing is complete and is never stored permanently.
 
 ## 2. Data Processing and Partners
 
 ### 2.1 Third-Party Services
 
-We use the following third-party services with strict data processing agreements:
+We use the following third-party services with strict data processing agreements to ensure your data remains protected:
 
-9. Clerk (United States)
-    
-    - Purpose: Authentication and user management
-        
-    - Data Handling:
-        
-        - User authentication
-            
-        - Session management
-            
-        - Security monitoring
-            
-        - User profiles
-            
-    - Security Measures:
-        
-        - SOC 2 Type 2 certified
-            
-        - Enterprise-grade encryption
-            
-        - MFA support
-            
-        - Fraud prevention
-            
-10. OpenAI (United States)
-    
-    - Purpose: Audio transcription using Whisper
-        
-    - Data Handling:
-        
-        - Temporary audio transcription
-            
-        - No data retention
-            
-        - No training or model fine-tuning
-            
-    - Security Measures:
-        
-        - SOC 2 Type 2 certified
-            
-        - Data encrypted in transit
-            
-        - Strict access controls
-            
-        - Regular security audits
+**Clerk (United States):** Clerk provides authentication and user management services. They handle user authentication, session management, security monitoring, and user profiles. Clerk maintains SOC 2 Type 2 certification, employs enterprise-grade encryption, supports multi-factor authentication, and implements fraud prevention measures to ensure the security of your account information.
 
-10a. Anthropic (United States)
-    
-    - Purpose: Document generation
-        
-    - Data Handling:
-        
-        - Real-time text processing
-            
-        - No data retention
-            
-        - No training or model fine-tuning
-            
-    - Security Measures:
-        
-        - SOC 2 Type 2 certified
-            
-        - Data encrypted in transit
-            
-        - Strict access controls
-            
-        - Regular security audits
-            
-11. Redis (United States)
-    
-    - Purpose: Database operations and usage tracking
-        
-    - Data Handling:
-        
-        - Rate limiting data
-            
-        - Usage quotas
-            
-        - Application metrics
-            
-        - No user content storage
-            
-    - Security Measures:
-        
-        - Australian data center
-            
-        - SOC 2 Type 2 certified
-            
-        - Network isolation
-            
-        - Encryption at rest
-            
-12. Stripe (United States)
-    
-    - Purpose: Payment processing
-        
-    - Data Handling:
-        
-        - Payment information only
-            
-        - PCI DSS Level 1 certified
-            
-        - No access to clinical data
-            
-    - Security Measures:
-        
-        - Encryption for all data in-transit
-            
-        - Fraud detection
-            
-        - Regular assessments
-            
-        - Compliance monitoring
-            
+**OpenAI (United States):** OpenAI provides audio transcription services using their Whisper technology. They handle temporary audio transcription with no data retention and no training or model fine-tuning using your data. OpenAI is SOC 2 Type 2 certified, encrypts all data in transit, implements strict access controls, and conducts regular security audits to maintain the highest security standards.
 
-13. PostHog (European Union)
-    
-    - Purpose: Product analytics and user behaviour insights
-        
-    - Data Handling:
-        
-        - Anonymous usage patterns
-            
-        - Feature adoption metrics
-            
-        - Performance monitoring
-            
-        - No personal data collection
-            
-    - Security Measures:
-        
-        - EU data hosting
-            
-        - Data minimisation practices
-            
-        - Regular security audits
-            
-        - Strict access controls
-            
+**Deepgram (United States):** Deepgram provides speech-to-text transcription services as an alternative to OpenAI. They handle temporary audio transcription with no data retention and no training or model fine-tuning using your data. Deepgram is SOC 2 Type 2 certified, encrypts all data in transit, implements strict access controls, and conducts regular security audits to ensure your audio data is processed securely.
 
-14. Google Ads (United States)
-    
-    - Purpose: Advertising conversion tracking
-        
-    - Data Handling:
-        
-        - Conversion metrics
-            
-        - Ad performance data
-            
-        - Cookie-based tracking
-            
-        - Anonymised user interactions
-            
-    - Security Measures:
-        
-        - Data encryption in transit
-            
-        - Limited data retention
-            
-        - Regular compliance audits
-            
-        - Access restrictions
-            
+**Anthropic (United States):** Anthropic provides document generation services through real-time text processing with no data retention and no training or model fine-tuning using your data. They maintain SOC 2 Type 2 certification, encrypt all data in transit, implement strict access controls, and conduct regular security audits to protect your information during processing.
 
-15. Plausible Analytics (European Union)
-    
-    - Purpose: Privacy-focused website analytics
-        
-    - Data Handling:
-        
-        - Anonymous page views
-            
-        - Aggregate visitor statistics
-            
-        - No personal data collection
-            
-        - No cookie tracking
-            
-    - Security Measures:
-        
-        - EU-based data processing
-            
-        - GDPR compliant
-            
-        - No cross-site tracking
-            
-        - Data minimisation by design
-            
+**Redis (United States):** Redis supports our database operations and usage tracking needs. They handle rate limiting data, usage quotas, and application metrics, but never store user content. Redis operates from an Australian data centre, maintains SOC 2 Type 2 certification, implements network isolation, and encrypts data at rest to ensure operational data remains secure.
+
+**Stripe (United States):** Stripe processes all payment information with PCI DSS Level 1 certification and has no access to clinical data. They encrypt all data in transit, employ fraud detection mechanisms, conduct regular assessments, and monitor compliance to ensure payment information remains secure.
+
+**PostHog (European Union):** PostHog provides product analytics and user behaviour insights through anonymous usage patterns, feature adoption metrics, and performance monitoring without collecting personal data. They host data in the EU, practice data minimisation, conduct regular security audits, and implement strict access controls to protect usage information.
+
+**Google Ads (United States):** Google Ads tracks advertising conversions, ad performance data, and anonymised user interactions using cookie-based tracking. They encrypt data in transit, limit data retention, conduct regular compliance audits, and restrict access to ensure advertising data remains protected.
+
+**Plausible Analytics (European Union):** Plausible provides privacy-focused website analytics through anonymous page views and aggregate visitor statistics without collecting personal data or using cookie tracking. They process data in the EU, maintain GDPR compliance, avoid cross-site tracking, and implement data minimisation by design to ensure privacy-friendly analytics.
 
 ### 2.2 Data Processing Principles
 
-All data processing follows these principles:
-
-16. Temporary and immediate processing only
-    
-17. Subject to strict data processing agreements
-    
-18. Compliant with Australian privacy laws
-    
-19. Limited to essential operations
-    
-20. Regular security and compliance audits
-    
+All data processing follows strict principles designed to protect your privacy. We process data temporarily and immediately, subject to strict data processing agreements with our partners. All processing complies with Australian privacy laws, and is limited to essential operations necessary for service provision.
 
 ## 3. Security Measures
 
 ### 3.1 Technical Security
 
-We protect your data through:
-
-21. Encryption for all data in transit
-    
-22. Zero-knowledge architecture preventing data access
-    
-23. Secure authentication using Clerk
-    
-24. Multi-factor authentication options
-    
-    
+We protect your data through comprehensive technical security measures. All data in transit is encrypted using industry-standard protocols. Our zero-knowledge architecture prevents data access by design. We implement secure authentication using Clerk's robust systems and offer multi-factor authentication options to provide additional account security.
 
 ### 3.2 Operational Security
 
-Our operational security includes:
-
-26. Regular security audits
-    
-27. Access control and monitoring
-    
-28. Incident response procedures
-    
-29. Security patch management
-    
+Our operational security includes security audits to identify and address potential vulnerabilities. We implement strict access control and monitoring to ensure only authorised personnel can access systems. We maintain incident response procedures to address security events promptly.
 
 ## 4. Data Protection Obligations
 
 ### 4.1 Our Commitments
 
-We commit to:
-
-30. Protecting your privacy and data security
-    
-31. Processing data only as necessary
-    
-32. Maintaining appropriate security measures
-    
-33. Promptly responding to security incidents
-    
-34. Regular compliance reviews
-    
+We are committed to protecting your privacy and data security. We process data as necessary to provide the services you request. We maintain appropriate security measures that meet or exceed industry standards. We respond promptly to any security incidents and conduct compliance reviews to ensure ongoing adherence to privacy regulations and best practices.
 
 ### 4.2 Your Responsibilities
 
-You are responsible for:
+As a user of our service, you have certain responsibilities regarding data security. You should maintain local device security through appropriate measures such as device passwords, encryption, and up-to-date software. You must protect your access credentials and not share them with unauthorised individuals. If you use the service in a professional capacity, you must obtain client/patient consent as required by your professional obligations. You should follow all professional privacy obligations applicable to your practice, and report any security concerns promptly so we can address them.
 
-35. Maintaining local device security
-    
-36. Protecting access credentials
-    
-37. Obtaining client/patient consent
-    
-38. Following professional privacy obligations
-    
-39. Reporting security concerns promptly
-    
-
-## 5. Psychology Practice Requirements
+## 5. Mental Health Practice Requirements
 
 ### 5.1 Client Consent
 
-When using NoteMate in your psychology practice, you must:
-
-40. Obtain explicit client/patient consent before recording
-    
-41. Document consent in clinical records
-    
-42. Inform clients/patients about:
-    
-    - The purpose of recording
-        
-    - Temporary processing details
-        
-    - Local device storage
-        
-    - Security measures in place
-        
-43. Follow Australian psychology privacy regulations
-    
+When using NoteMate in your mental health practice, you must obtain explicit client/patient consent before recording any sessions. This consent should be documented in your clinical records as evidence of compliance. You should inform clients/patients about the purpose of recording, temporary processing details, local device storage practices, and security measures in place to protect their information. All usage must follow Australian privacy regulations and professional standards applicable to your discipline.
 
 ### 5.2 Professional Obligations
 
-As a psychologist, you must maintain:
-
-44. Appropriate clinical records
-    
-45. Client/patient privacy protocols
-    
-46. Psychology professional standards compliance
-    
-47. Organisational policy compliance
-    
+As a mental health professional using our service, you must maintain appropriate clinical records in accordance with your profession's standards. You must implement and follow client/patient privacy protocols that meet regulatory requirements for your discipline. Your use of NoteMate must comply with your profession's standards and any organisational policies applicable to your practice setting. NoteMate is designed for use by all qualified mental health professionals, including but not limited to psychologists, psychiatrists, counsellors, social workers, and other qualified practitioners.
 
 ## 6. Your Privacy Rights
 
 ### 6.1 Legal Rights
 
-Under Australian privacy law, you have the right to:
-
-48. Access your personal information
-    
-49. Correct your personal information
-    
-50. Request account deletion
-    
-51. Withdraw processing consent
-    
-52. Lodge privacy complaints
-    
-53. Receive data breach notifications
-    
+Under Australian privacy law, you have several important rights regarding your personal information. You have the right to access your personal information that we hold. You can request corrections to your personal information if it is inaccurate or incomplete. You may request account deletion if you no longer wish to use our services. You can withdraw processing consent at any time. You have the right to lodge privacy complaints with relevant authorities if you believe your privacy has been violated. You will receive data breach notifications in the unlikely event of a security incident affecting your data.
 
 ### 6.2 Exercise of Rights
 
-To exercise these rights:
-
-54. Email us at contact@notemate.io
-    
-55. Provide necessary identification
-    
-56. Specify your request clearly
-    
-57. Allow up to seven (7) days for response
-    
+To exercise these rights, you can email us at contact@notemate.io with your request. Please provide necessary identification to verify your identity and specify your request clearly so we can address it promptly. We will respond to all legitimate requests within seven (7) days to ensure your rights are respected.
 
 ## 7. Data Incidents
 
 ### 7.1 Our Response
 
-In case of a data incident, we will:
-
-58. Investigate immediately
-    
-59. Notify affected users
-    
-60. Implement containment measures
-    
-61. Conduct root cause analysis
-    
-62. Take preventive actions
-    
+In the event of a data incident, we will investigate immediately to understand the scope and impact. We will notify all affected users with relevant details about the incident. We will implement containment measures to limit any potential damage. We will conduct a thorough root cause analysis to understand how the incident occurred, and take preventive actions to reduce the risk of similar incidents in the future.
 
 ### 7.2 Notification Process
 
-We will notify you of incidents:
-
-63. Within required timeframes
-    
-64. With incident details
-    
-65. With recommended actions
-    
-66. Through secure channels
-    
+We will notify you of incidents within required timeframes established by applicable regulations. Our notifications will include incident details to help you understand what happened. We will provide recommended actions you can take to protect yourself if necessary. All notifications will be sent through secure channels to prevent further security issues.
 
 ## 8. Jurisdiction and Governing Law
 
 ### 8.1 Governing Law
 
-This Privacy Policy is governed by the laws of Victoria, Australia.
+This Privacy Policy is governed by the laws of Victoria, Australia, which determine how the terms are interpreted and enforced.
 
 ### 8.2 Jurisdiction
 
-Any privacy disputes will be subject to the exclusive jurisdiction of the courts of Victoria, Australia.
+Any privacy disputes arising from the use of our service will be subject to the exclusive jurisdiction of the courts of Victoria, Australia, which will have the authority to resolve such disputes.
 
 ## 9. Changes to Policy
 
 ### 9.1 Updates
 
-We may update this Privacy Policy by:
-
-67. Posting changes on our website
-    
-68. Notifying you via email
-    
-69. Providing in-app notifications
-    
-70. Requiring acknowledgment if necessary
-    
+We may update this Privacy Policy from time to time to reflect changes in our practices or regulatory requirements. We will post changes on our website to ensure transparency. We may notify you via email about significant changes that affect your rights or our obligations. We may provide in-app notifications about policy updates. For substantial changes, we may require acknowledgment to ensure you are aware of the new terms.
 
 ### 9.2 Effect
 
-Changes will be effective upon posting, with continued use constituting acceptance.
+All changes to this policy will be effective upon posting to our website. Your continued use of our services after policy updates constitutes acceptance of the new terms, so we encourage you to review the policy periodically.
 
 ## Contact
 
-For privacy-related inquiries, please email contact@notemate.io.
+For privacy-related inquiries, please email contact@notemate.io.
 
 Privacy complaints may also be directed to:  
   

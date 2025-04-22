@@ -1,432 +1,101 @@
 ---
 title: 'Australian Privacy Principles'
-description: 'How NoteMate complies with Australian Privacy Principles'
+description: ‘Last updated: 22 April 2025’
 ---
 
-This document outlines how NoteMate (ABN 33 659 424 629) ("**NoteMate**", "**we**", "**us**", or "**our**") complies with the Australian Privacy Principles (APPs) under the Privacy Act 1988.
+# Australian Privacy Principles
+
+This document outlines how NoteMate ("**NoteMate**", "**we**", "**us**", or "**our**") complies with the Australian Privacy Principles (APPs) under the Privacy Act 1988.
 
 ## 1. Data Architecture Foundation
 
 ### 1.1 Zero-Knowledge Architecture
 
-Our compliance is built on a zero-knowledge architecture where:
-
-1. The application cannot access or decrypt your sensitive clinical content
-    
-2. Clinical documentation is stored locally on your device
-    
-3. Content is temporarily transmitted for processing (transcription and generation)
-    
-4. We maintain only essential operational data and templates
-    
+Our compliance is built on a zero-knowledge architecture where the application cannot access or decrypt your sensitive clinical content. All clinical documentation is stored locally on your device, ensuring that your data remains under your control. Content is temporarily transmitted for processing purposes such as transcription and generation, after which it is immediately deleted. We maintain essential operational data and templates necessary for the service to function.
 
 ### 1.2 Data Categories
 
-We handle three distinct categories of data:
+We handle three distinct categories of data with different protection mechanisms:
 
-1. Authentication Data (via Clerk):
-    
-    - User authentication data
-        
-    - Security settings
-        
-    - Account management
-        
-    - Multi-factor authentication settings
-        
-2. Operational Data (via Redis in Australia):
-    
-    - Usage limits and quotas
-        
-    - Rate limiting data
-        
-    - Application metrics
-        
-    - Template storage and management
-        
-3. Processing Data (Temporary):
-    
-    - Audio recordings for transcription
-        
-    - Text for document generation
-        
-    - Transmitted securely and immediately discarded after processing
-        
+**Authentication Data:** This includes user authentication data, security settings, account management information, and multi-factor authentication settings. This data is necessary to verify your identity and secure your account.
+
+**Operational Data:** This encompasses usage limits and quotas, rate limiting data, application metrics, and template storage and management. This information helps us maintain service quality and ensure fair usage.
+
+**Processing Data:** This includes audio recordings for transcription, text for document generation, and other content that is transmitted securely and immediately discarded after processing. We do not retain this data beyond the time needed for processing.
 
 ## 2. APP Compliance Details
 
 ### 2.1 APP 1: Open and Transparent Management
 
-We demonstrate transparency through:
-
-4. Comprehensive documentation:
-    
-    - Clear privacy policies
-        
-    - Detailed data handling information
-        
-    - Regular policy updates
-        
-    - Accessible privacy information
-        
-5. Management practices:
-    
-    - Documented procedures
-        
-    - Regular staff training
-        
-    - Clear accountability
-        
-    - Incident response planning
-        
+We demonstrate transparency through comprehensive documentation and robust management practices. Our documentation includes clear privacy policies, detailed data handling information, regular policy updates, and accessible privacy information. Our management practices encompass documented procedures, clear accountability structures, and incident response planning to ensure we maintain the highest standards of privacy protection.
 
 ### 2.2 APP 2: Anonymity and Pseudonymity
 
-We support privacy by:
-
-6. Minimising data collection:
-    
-    - Essential operational data only
-        
-    - No unnecessary personal information
-        
-    - No stored clinical content
-        
-7. User control:
-    
-    - Local data storage
-        
-    - User-managed profiles
-        
-    - Optional feature usage
-        
+We support privacy by minimising data collection and providing user control over personal information. We collect essential operational data and avoid unnecessary personal information collection. We do not store clinical content on our servers. Users maintain control through local data storage, user-managed profiles, and optional feature usage that allows you to decide what functionality to use.
 
 ### 2.3 APP 3: Collection of Solicited Information
 
-We maintain minimal collection through:
-
-8. Authentication data:
-    
-    - Managed by Clerk
-        
-    - Essential credentials only
-        
-    - Security settings
-        
-    - Account management
-        
-9. Operational data:
-    
-    - Usage metrics
-        
-    - System performance
-        
-    - Security monitoring
-        
-    - Template storage
-        
-    - No clinical content
-        
-10. Billing data:
-    
-    - Managed by Stripe
-        
-    - Payment information
-        
-    - Subscription details
-        
-    - Transaction history
-        
+We maintain minimal collection practices for the different types of data we handle. Authentication data is managed by Clerk and includes essential credentials, security settings, and account management information. Operational data covers usage metrics, system performance information, security monitoring, and template storage, but never includes clinical content. Billing data is managed by Stripe, and encompasses payment information, subscription details, and transaction history.
 
 ### 2.4 APP 4: Dealing with Unsolicited Information
 
-Our architecture prevents unsolicited information by:
-
-11. Technical measures:
-    
-    - Zero-knowledge design
-        
-    - Immediate processing deletion
-        
-    - No content storage
-        
-    - Local-only clinical data
-        
-12. Operational procedures:
-    
-    - Clear data boundaries
-        
-    - Processing limitations
-        
-    - Staff training
-        
-    - Regular audits
-        
+Our architecture prevents unsolicited information through technical measures and operational procedures. Technical measures include our zero-knowledge design, immediate processing deletion policies, absence of content storage, and local clinical data approach. Our operational procedures establish clear data boundaries and processing limitations to ensure compliance.
 
 ### 2.5 APP 5: Notification of Collection
 
-We provide clear notification about:
-
-13. Data handling:
-    
-    - Types of information processed
-        
-    - Processing methods
-        
-    - Third-party services
-        
-    - Processing duration
-        
-14. Purpose information:
-    
-    - Intended use
-        
-    - Processing necessity
-        
-    - Service functionality
-        
-    - User benefits
-        
+We provide clear notification about data handling and purpose information. Our data handling notifications cover the types of information processed, processing methods, third-party services involved, and processing duration. Purpose information explains the intended use of data, processing necessity, service functionality, and user benefits to ensure you understand why certain information is collected.
 
 ### 2.6 APP 6: Use or Disclosure
 
-Our data handling ensures:
-
-15. Limited use:
-    
-    - Specified purposes only
-        
-    - No secondary use
-        
-    - No marketing use
-        
-    - No data sharing
-        
-16. Controlled disclosure:
-    
-    - Processing partners only
-        
-    - Strict agreements
-        
-    - Limited duration
-        
-    - Immediate deletion
-        
+Our data handling ensures limited use and controlled disclosure of your information. We use data for specified purposes with no secondary use, marketing use, or data sharing beyond what is necessary for service provision. Disclosure is limited to processing partners only, under strict agreements, for limited duration, with immediate deletion after processing is complete.
 
 ### 2.7 APP 7: Direct Marketing
 
-We maintain privacy by:
-
-17. No marketing use:
-    
-    - No personal information use
-        
-    - No behavior tracking
-        
-    - No profile building
-        
-18. Communication limits:
-    
-    - Service updates only
-        
-    - Security notifications
-        
-    - Essential information
-        
-    - User-controlled preferences
-        
+We maintain privacy by avoiding marketing use of your data and implementing communication limits. We do not use personal information for marketing purposes, track behaviour, or build user profiles. Our communications are limited to service updates, security notifications, essential information, and respect user-controlled preferences.
 
 ### 2.8 APP 8: Cross-border Disclosure
 
-We manage international processing through:
-
-19. Partner Services:
-    
-    - Authentication (Clerk - US based)
-        
-    - Audio transcription (OpenAI Whisper - US based)
-        
-    - Document generation (Anthropic - US based)
-        
-    - Payment processing (Stripe - US based)
-        
-20. Technical Controls:
-    
-    - Encrypted transmission
-        
-    - Immediate processing deletion
-        
-    - No persistent storage of clinical data
-        
-    - Template storage in Australian data centers
-        
+We manage international processing through partner services and technical controls. Our partner services include AI, database storage, authentication, and payment processing. Technical controls include encrypted transmission, immediate processing deletion, no persistent storage of clinical data, and template storage in Australian data centres.
 
 ### 2.9 APP 9: Government Identifiers
 
-We ensure compliance by:
-
-21. Data limitations:
-    
-    - No government identifiers
-        
-    - No Medicare numbers
-        
-    - No tax identifiers
-        
-    - No health identifiers
-        
-22. Authentication approach:
-    
-    - Email-based identification
-        
-    - Secure credentials
-        
-    - Professional verification
-        
-    - No government ID requirements
-        
+We ensure compliance by implementing data limitations and a secure authentication approach. Our data limitations mean we do not collect or store government identifiers, Medicare numbers, tax identifiers, or health identifiers. Our authentication approach uses email-based identification, secure credentials, professional verification when necessary, and does not require government ID.
 
 ### 2.10 APP 10: Quality of Personal Information
 
-We maintain data quality through:
-
-23. Real-time processing:
-    
-    - No historical storage
-        
-    - Immediate updates
-        
-    - Regular verification
-        
-    - User control
-        
-24. Quality controls:
-    
-    - Accuracy checks
-        
-    - Validation procedures
-        
-    - Update mechanisms
-        
-    - Error correction
-        
+We maintain data quality through real-time processing and quality controls. Real-time processing means no historical storage, immediate updates, regular verification, and user control over information. Quality controls include accuracy checks, validation procedures, update mechanisms, and error correction processes.
 
 ### 2.11 APP 11: Security of Personal Information
 
-Our security measures include:
-
-25. Technical controls:
-    
-    - Encryption for all data in-transit
-        
-    - Zero-knowledge architecture
-        
-    - Multi-factor authentication
-        
-    - Access controls
-        
-26. Operational security:
-    
-    - Regular assessments
-        
-    - Staff training
-        
-    - Incident response
-        
-    - Security monitoring
-        
+Our security measures include technical controls and operational security practices. Technical controls encompass encryption for all data in-transit, zero-knowledge architecture, multi-factor authentication, and access controls. Operational security includes incident response procedures and security monitoring.
 
 ### 2.12 APP 12: Access to Personal Information
 
-We provide access through:
-
-27. Account Management:
-    
-    - Profile settings via Clerk
-        
-    - Subscription management
-        
-    - Usage statistics
-        
-    - Template management
-        
-28. Access Methods:
-    
-    - Self-service account dashboard
-        
-    - Support assistance when needed
-        
+We provide access through account management tools and various access methods. Account management includes profile settings via Clerk, subscription management, usage statistics, and template management. Access methods include a self-service account dashboard and support assistance when needed.
 
 ### 2.13 APP 13: Correction of Personal Information
 
-We enable corrections through:
+We enable corrections through account updates and data accuracy measures. Account updates allow for email address changes, profile information updates, and subscription modifications. Data accuracy is maintained through immediate profile updates, template management, and usage tracking verification.
 
-29. Account Updates:
-    
-    - Email address changes
-        
-    - Profile information updates
-        
-    - Subscription modifications
-        
-30. Data Accuracy:
-    
-    - Immediate profile updates
-        
-    - Template management
-        
-    - Usage tracking verification
-        
-
-## 3. Psychology Practice Requirements
+## 3. Mental Health Practice Requirements
 
 ### 3.1 Clinical Use
 
-When using NoteMate in psychology practice:
-
-31. Consent requirements:
-    
-    - Explicit client/patient consent
-        
-    - Documented approval
-        
-    - Clear information
-        
-    - Withdrawal options
-        
-32. Professional obligations:
-    
-    - Psychology clinical standards
-        
-    - Privacy compliance
-        
-    - Record keeping
-        
-    - Security measures
-        
+When using NoteMate in mental health practice, there are specific consent requirements and professional obligations to consider. Consent requirements include obtaining explicit client/patient consent, documented approval, clear information about data handling, and withdrawal options. Professional obligations encompass clinical standards relevant to your profession, privacy compliance, record keeping, and security measures. NoteMate is designed for use by all qualified mental health professionals, including but not limited to psychologists, psychiatrists, counsellors, social workers, and other qualified practitioners.
 
 ## 4. Changes
 
 ### 4.1 Updates
 
-We may update this page by:
-
-33. Posting changes on our website
-    
-34. Notifying you via email
-    
-35. Providing in-app notifications
-    
-36. Requiring acknowledgment if necessary
-    
+We may update this page by posting changes on our website, notifying you via email, providing in-app notifications, and requiring acknowledgment if necessary to ensure you remain informed about our privacy practices.
 
 ### 4.2 Effect
 
-Changes will be effective upon posting, with continued use constituting acceptance.
+Changes will be effective upon posting, with continued use constituting acceptance of the updated terms.
 
 ## Contact
 
-For privacy-related inquiries, please email contact@notemate.io.
+For privacy-related inquiries, please email contact@notemate.io.
 
 Privacy complaints may also be directed to:  
   
